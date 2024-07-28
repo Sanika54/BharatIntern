@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">Netflix</div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+                <div class="profile">Profile</div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unlimited movies, TV shows, and more.</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <button>Watch Now</button>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2>Featured</h2>
+        <div class="carousel">
+            <div class="carousel-item"><img src="https://via.placeholder.com/300x450" alt="Movie 1"></div>
+            <div class="carousel-item"><img src="https://via.placeholder.com/300x450" alt="Movie 2"></div>
+            <div class="carousel-item"><img src="https://via.placeholder.com/300x450" alt="Movie 3"></div>
+            <div class="carousel-item"><img src="https://via.placeholder.com/300x450" alt="Movie 4"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Simple Netflix Clone. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: #141414;
+}
+
+header {
+    background: #000;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.profile {
+    font-size: 16px;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1920x800') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: #e50914;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #f40612;
+}
+
+.featured {
+    padding: 40px 20px;
+}
+
+.featured h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 300px;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background: #000;
+    color: #888;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
